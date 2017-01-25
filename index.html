@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Template</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/media-queries.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#">LOGO</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar" aria-expanded="false">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#team">TEAM</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                            <li><a href="#">SIGN IN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="intro">
+            <div class="container-fluid">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center">Our Mission</h2>
+                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container-fluid">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center">About</h2>
+                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <h2 class="text-center">Team</h2>
+            <div class="container-fluid">
+                <div class="col-sm-4 col-md-2 col-md-offset-3">
+                    <img src="images/Layer-1.png" alt="John Doe" class="img-responsive center-block">
+                    <p class="text-center"><b>John Doe</b><br><em>Founder &amp; CEO</em></p>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <img src="images/Layer-2.png" alt="John Doe" class="img-responsive center-block">
+                    <p class="text-center"><b>John Doe</b><br><em>Co-Founder</em></p>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <img src="images/Layer-3.png" alt="John Doe" class="img-responsive center-block">
+                    <p class="text-center"><b>John Doe</b><br><em>Investor</em></p>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <a href="#" >WORK WITH US</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=310%20Highland%20Ave%2C%20Salem%2C%20MA%2001970&key=AIzaSyCXRf1NGkHjUyEm2Rc6OA8JKil3xAXKKw4" allowfullscreen></iframe>
+        </section>
+        <footer class="footer">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="text-center">
+                        <li><a href="javascript:void(0);">ABOUT</a></li>
+                        <li><a href="javascript:void(0);">FAQ</a></li>
+                        <li><a href="javascript:void(0);">WORK WITH US</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="text-center">
+                        <li><a href="javascript:void(0);"><img src="images/MergedLayersGm.png" alt="Gmail icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/MergedLayersFb.png" alt="Facebook icon"></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/MergedLayersTw.png" alt="Twitter icon"></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-2">
+                <ul class="text-center">
+                    <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0);">Terms and Conditions</a></li>
+                    <li><a href="javascript:void(0);">&copy; Company.LLC 2014</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!--Disabling mouse scroll on google map-->
+        <script>
+            $('#contact').click(function () {
+                $('#contact iframe').css("pointer-events", "auto");
+            });
+
+            $('#contact').mouseleave(function() {
+                $('#contact iframe').css("pointer-events", "none"); 
+            });
+        </script>
+    </body>
+    <!--На верстку макету використав 6год-->
+</html>
